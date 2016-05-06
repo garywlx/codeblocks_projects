@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1462450229 source:d:\c++ projects\template\main.cpp
+	<iostream>
+	"Sales_data.h"
+	<vector>
+	<string>
+
+1462448343 source:d:\c++ projects\template\src\sales_data.cpp
+	"Sales_data.h"
+
+1462448335 d:\c++ projects\template\include\sales_data.h
+
+1462452694 source:d:\c++ projects\template\src\blob.cpp
+	"Blob.h"
+
+1462459960 d:\c++ projects\template\include\blob.h
+	<vector>
+	<string>
+	<memory>
+	"BlobPtr.h"
+
+1462458673 d:\c++ projects\template\include\blobptr.h
+	<vector>
+	<string>
+	<memory>
+	<stdexcept>
+	"Blob.h"
+
+1462460133 source:d:\c++ projects\template\src\a.cpp
+	"A.h"
+
+1462460265 d:\c++ projects\template\include\a.h
+	<list>
+	<vector>
+	<map>
+	<utility>
+
+1462460139 source:d:\c++ projects\template\src\c.cpp
+	"C.h"
+
+1462460123 d:\c++ projects\template\include\c.h
+	<iostream>
+

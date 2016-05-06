@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1458289165 source:d:\c++ projects\rotatingstring\main.cpp
+	<stdio.h>
+	<string.h>
+

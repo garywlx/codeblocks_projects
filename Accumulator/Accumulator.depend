@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1461484813 source:d:\c++ projects\accumulator\main.cpp
+	<iostream>
+	"Temp.h"
+
+1461482608 d:\c++ projects\accumulator\include\temp.h
+
+1461482630 source:d:\c++ projects\accumulator\src\temp.cpp
+	"Temp.h"
+
+1461482971 source:d:\c++ projects\accumulator\src\a.cpp
+	"A.h"
+
+1461482856 d:\c++ projects\accumulator\include\a.h
+
+1461482978 source:d:\c++ projects\accumulator\src\b.cpp
+	"B.h"
+
+1461482929 d:\c++ projects\accumulator\include\b.h
+	<A.h>
+

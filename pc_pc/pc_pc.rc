@@ -1,0 +1,406 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\pc_pc.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\pc_pc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 pc_pc"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "pc_pc 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PC_PC_DIALOG DIALOGEX 0, 0, 461, 267
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "基于MFC的串口通信"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "开始",IDOK,28,218,50,14
+    PUSHBUTTON      "结束",IDCANCEL,195,219,50,14
+    LTEXT           "数据接收区",IDC_STATIC,17,17,41,8
+    EDITTEXT        IDC_receive,18,35,239,55,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "数据发送区",IDC_STATIC,17,118,41,8
+    EDITTEXT        IDC_send,19,136,245,55,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,429,16,25,25
+    CONTROL         "",IDC_MSCOMM2,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,429,113,25,25
+    PUSHBUTTON      "暂停",IDC_STOP,114,217,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,447,92
+    GROUPBOX        "",IDC_STATIC,7,107,447,90
+    COMBOBOX        IDC_PORT1,295,29,44,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "串口",IDC_STATIC,268,33,17,8
+    COMBOBOX        IDC_PORT2,299,121,48,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "串口",IDC_STATIC,272,123,19,10
+    LTEXT           "波特率",IDC_STATIC,347,31,30,11
+    COMBOBOX        IDC_BAUD_RATE1,379,31,50,52,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "波特率",IDC_STATIC,356,121,30,11
+    COMBOBOX        IDC_BAUD_RATE2,385,119,42,54,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "奇偶校验",IDC_STATIC,265,59,35,11
+    LTEXT           "数据位",IDC_STATIC,347,57,24,12
+    LTEXT           "停止位",IDC_STATIC,266,79,30,10
+    LTEXT           "缓冲区大小",IDC_STATIC,346,79,41,10
+    COMBOBOX        IDC_PARITY_BIT1,299,58,40,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DATA_BIT1,381,57,48,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_STOP_BIT1,299,79,36,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_BUFFER_SIZE1,390,76,41,49,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "奇偶校验",IDC_STATIC,267,146,35,11
+    COMBOBOX        IDC_PARITY_BIT2,304,144,40,43,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_STOP_BIT2,303,167,40,48,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DATA_BIT2,389,141,40,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_BUFFER_SIZE2,393,169,40,46,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "缓冲区大小",IDC_STATIC,351,171,41,11
+    LTEXT           "数据位",IDC_STATIC,357,145,26,11
+    LTEXT           "停止位",IDC_STATIC,271,170,31,11
+    PUSHBUTTON      "保存设置",ID_SAVE_SETTING,352,219,47,19
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "pc_pc Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "pc_pc\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "pc_pc.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "pc_pc 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PC_PC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 454
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PC_PC_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_MSCOMM2, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_BAUD_RATE1, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_BAUD_RATE1, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_BAUD_RATE1, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_BAUD_RATE1, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 6, 0
+0x3334, 0x3030, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 6, 0
+0x3832, 0x3038, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BAUD_RATE1, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BAUD_RATE1, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_BAUD_RATE1, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_BAUD_RATE1, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_BAUD_RATE1, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_BAUD_RATE2, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_BAUD_RATE2, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_BAUD_RATE2, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 6, 0
+0x3334, 0x3030, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 6, 0
+0x3832, 0x3038, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BAUD_RATE2, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BAUD_RATE2, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_BAUD_RATE2, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_BAUD_RATE2, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_BAUD_RATE2, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_PARITY_BIT1, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_PARITY_BIT1, 0x403, 4, 0
+0x444f, 0x0044, 
+    IDC_PARITY_BIT1, 0x403, 5, 0
+0x5645, 0x4e45, "\000" 
+    IDC_DATA_BIT1, 0x403, 2, 0
+0x0038, 
+    IDC_DATA_BIT1, 0x403, 2, 0
+0x0036, 
+    IDC_DATA_BIT1, 0x403, 2, 0
+0x0037, 
+    IDC_STOP_BIT1, 0x403, 2, 0
+0x0031, 
+    IDC_STOP_BIT1, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_STOP_BIT1, 0x403, 2, 0
+0x0032, 
+    IDC_BUFFER_SIZE1, 0x403, 4, 0
+0x3532, 0x0036, 
+    IDC_BUFFER_SIZE1, 0x403, 4, 0
+0x3135, 0x0032, 
+    IDC_BUFFER_SIZE1, 0x403, 5, 0
+0x3031, 0x3432, "\000" 
+    IDC_BUFFER_SIZE1, 0x403, 5, 0
+0x3032, 0x3834, "\000" 
+    IDC_BUFFER_SIZE1, 0x403, 5, 0
+0x3034, 0x3639, "\000" 
+    IDC_BUFFER_SIZE1, 0x403, 5, 0
+0x3138, 0x3239, "\000" 
+    IDC_PARITY_BIT2, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_PARITY_BIT2, 0x403, 4, 0
+0x444f, 0x0044, 
+    IDC_PARITY_BIT2, 0x403, 5, 0
+0x5645, 0x4e45, "\000" 
+    IDC_STOP_BIT2, 0x403, 2, 0
+0x0031, 
+    IDC_STOP_BIT2, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_STOP_BIT2, 0x403, 2, 0
+0x0032, 
+    IDC_DATA_BIT2, 0x403, 2, 0
+0x0038, 
+    IDC_DATA_BIT2, 0x403, 2, 0
+0x0036, 
+    IDC_DATA_BIT2, 0x403, 2, 0
+0x0037, 
+    IDC_BUFFER_SIZE2, 0x403, 4, 0
+0x3532, 0x0036, 
+    IDC_BUFFER_SIZE2, 0x403, 4, 0
+0x3135, 0x0032, 
+    IDC_BUFFER_SIZE2, 0x403, 5, 0
+0x3031, 0x3432, "\000" 
+    IDC_BUFFER_SIZE2, 0x403, 5, 0
+0x3032, 0x3834, "\000" 
+    IDC_BUFFER_SIZE2, 0x403, 5, 0
+0x3034, 0x3639, "\000" 
+    IDC_BUFFER_SIZE2, 0x403, 5, 0
+0x3138, 0x3239, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 pc_pc(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\pc_pc.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

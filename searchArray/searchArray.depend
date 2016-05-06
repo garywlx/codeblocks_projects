@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1460100022 source:d:\c++ projects\searcharray\main.cpp
+	<iostream>
+	<stdlib.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1461459323 source:d:\c++ projects\findsub\main.cpp
+	<iostream>
+	<string>
+

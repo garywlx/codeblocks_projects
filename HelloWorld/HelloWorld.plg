@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HelloWorld - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD507.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/HelloWorld.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\C++ Projects\HelloWorld\Container.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD507.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD518.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/HelloWorld.pdb" /debug /machine:I386 /out:"Debug/HelloWorld.exe" /pdbtype:sept 
+".\Debug\Hello.obj"
+".\Debug\stringstream.obj"
+".\Debug\Container.obj"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD518.tmp"
+<h3>Output Window</h3>
+Compiling...
+Container.cpp
+D:\C++ Projects\HelloWorld\Container.cpp(14) : error C2664: '__thiscall std::deque<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::std::deque<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >(unsigned int,const class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,const class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)' : cannot convert parameter 1 from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *' to 'unsigned int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+D:\C++ Projects\HelloWorld\Container.cpp(15) : error C2664: '__thiscall std::deque<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::std::deque<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >(unsigned int,const class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,const class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)' : cannot convert parameter 1 from 'const class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *' to 'unsigned int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+D:\C++ Projects\HelloWorld\Container.cpp(18) : error C2664: '__thiscall std::list<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::std::list<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >(unsigned int,const class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,const class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &)' : cannot convert parameter 1 from 'char *[4]' to 'unsigned int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+D:\C++ Projects\HelloWorld\Container.cpp(20) : warning C4508: 'main' : function should return a value; 'void' return type assumed
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+HelloWorld.exe - 3 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

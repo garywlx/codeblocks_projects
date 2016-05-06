@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1458903583 source:d:\c++ projects\rotaion\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+

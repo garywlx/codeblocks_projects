@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1461052808 source:d:\c++ projects\bit\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<ctime>
+	<stdlib.h>
+

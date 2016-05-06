@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1458544535 source:d:\c++ projects\deepcopy\main.cpp
+	<iostream>
+	<stdio.h>
+	<malloc.h>
+

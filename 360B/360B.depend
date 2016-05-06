@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1459169987 source:d:\c++ projects\360b\main.cpp
+	<stdio.h>
+	<string.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1459479408 source:d:\c++ projects\strreplace\main.cpp
+	<iostream>
+	<string.h>
+

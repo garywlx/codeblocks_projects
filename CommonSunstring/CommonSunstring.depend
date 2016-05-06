@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1461743776 source:d:\c++ projects\commonsunstring\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

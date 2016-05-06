@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MultiThread - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPEC33.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MultiThread.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\C++ Projects\MultiThread\MultiThreadDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPEC33.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPEC43.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MultiThread.pdb" /debug /machine:I386 /out:"Debug/MultiThread.exe" /pdbtype:sept 
+".\Debug\MultiThread.obj"
+".\Debug\MultiThreadDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UIThread.obj"
+".\Debug\MultiThread.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPEC43.tmp"
+<h3>Output Window</h3>
+Compiling...
+MultiThreadDlg.cpp
+d:\c++ projects\multithread\multithreaddlg.h(27) : error C2065: 'IDD_MULTITHREAD_DIALOG' : undeclared identifier
+d:\c++ projects\multithread\multithreaddlg.h(27) : error C2057: expected constant expression
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(24) : error C2065: 'IDD_ABOUTBOX' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(24) : error C2057: expected constant expression
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(69) : error C2065: 'IDR_MAINFRAME' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(76) : error C2065: 'IDC_PROGRESS1' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(77) : error C2065: 'IDC_MILLISECOND' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(86) : error C2065: 'IDSTART' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(87) : error C2065: 'IDCREATE' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(105) : error C2065: 'IDM_ABOUTBOX' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(112) : error C2065: 'IDS_ABOUTBOX' : undeclared identifier
+D:\C++ Projects\MultiThread\MultiThreadDlg.cpp(132) : warning C4018: '==' : signed/unsigned mismatch
+Error executing cl.exe.
+Creating command line "bscmake.exe /nologo /o"Debug/MultiThread.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\MultiThread.sbr" ".\Debug\MultiThreadDlg.sbr" ".\Debug\UIThread.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MultiThread.exe - 11 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1462180172 source:d:\c++ projects\copycontrol\main.cpp
+	<iostream>
+	"ex13_05.h"
+	"StrVec.h"
+	"String.h"
+	<vector>
+	"Foo.h"
+
+1461850031 source:d:\c++ projects\copycontrol\src\ex13_05.cpp
+	"ex13_05.h"
+
+1461855830 d:\c++ projects\copycontrol\include\ex13_05.h
+	<iostream>
+	<string>
+
+1461914192 source:d:\c++ projects\copycontrol\src\folder.cpp
+	"Folder.h"
+
+1461914260 d:\c++ projects\copycontrol\include\folder.h
+	<set>
+	"Message.h"
+
+1462012939 source:d:\c++ projects\copycontrol\src\message.cpp
+	"Message.h"
+
+1462010594 d:\c++ projects\copycontrol\include\message.h
+	<string>
+	<set>
+	"Folder.h"
+
+1462181578 source:d:\c++ projects\copycontrol\src\strvec.cpp
+	"StrVec.h"
+
+1462181938 d:\c++ projects\copycontrol\include\strvec.h
+	<string>
+	<memory>
+	<algorithm>
+
+1462180431 source:d:\c++ projects\copycontrol\src\string.cpp
+	"String.h"
+
+1462180358 d:\c++ projects\copycontrol\include\string.h
+	<iostream>
+	<memory>
+	<algorithm>
+
+1462026583 source:d:\c++ projects\copycontrol\src\foo.cpp
+	"Foo.h"
+
+1462026589 d:\c++ projects\copycontrol\include\foo.h
+	<vector>
+	<iostream>
+	<algorithm>
+

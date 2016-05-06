@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1458901168 source:d:\c++ projects\kaprekar\main.cpp
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+

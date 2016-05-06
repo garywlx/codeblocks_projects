@@ -1,0 +1,100 @@
+0   No error has occurred
+1   The User Interface Manager could not be opened
+2   The system font could not be loaded
+3   The operation attempted cannot be performed while a pop-up panel is active
+4   Panel, menu bar, or control array handle is invalid
+5   Attempted to position panel at an invalid location
+6   Attempted to make an inoperable control the active control
+7   The operation requires that a panel be active
+8   The operation requires that a pop-up be active
+9   The operation requires that a menu bar be active
+10   The control is not the type expected by the function
+11   The id passed was not a valid menu item id
+12   Out of memory
+13   Invalid control ID
+14   Value is invalid or out of range
+15   File is not a User Interface file or has been corrupted
+16   File format is out-of-date
+17   Image is corrupted or format is not supported
+18   No user event possible in current configuration
+19   Unable to open file
+20   Error reading file
+21   Error writing file
+22   Error closing file
+23   Panel state file has invalid format
+24   Resource ID not found in user interface resource file
+25   Error occurred during hardcopy output
+26   Invalid default directory specified in FileSelectPopup or FileSelectPopupEx function
+27   Operation is invalid for specified object
+28   Unable to find specified string in menu
+29   Palette menu items can only be added to the end of the menu
+30   Too many menus in the menu bar
+31   Separators can't have checkmarks
+32   Separators can't have submenus
+34   The menu item can't be a separator
+35   The item already has a submenu
+36   The item does not have a submenu
+37   The id passed must be a menu id, a menu item id, or NULL
+38   The id passed must be a menu id or a menu item id
+39   The id passed was not a submenu id
+40   The id passed was not a valid menu id
+41   The handle is not a menu bar handle
+42   The handle is not a panel handle
+43   The operation attempted cannot be performed while this pop-up panel is active
+44   The specified Control/Panel/Menu doesn't have the specified attribute
+45   The control type passed was not a valid type
+46   The attribute passed is not valid
+47   The fill option must be set to fill above or fill below to paint ring slide's fill color
+48   The fill option must be set to fill above or fill below to paint numeric slide's fill color
+49   The control passed is not a ring slide
+50   The control passed is not a numeric slide
+51   The control passed is not a ring slide with inc/dec arrows
+52   The control passed is not a numeric slide with inc/dec arrows
+53   The data type passed is not a valid data type for the control
+54   The attribute passed is not valid for the data type of the control
+55   The index passed is out of range
+56   There are no items in the list control
+57   The buffer passed was too small for the operation
+58   The control does not have a value
+59   The value passed is not in the list control
+60   The control passed must be a list control
+61   The control passed must be a list control or binary switch
+62   The data type of the control passed must be set to string
+63   That attribute is not a settable attribute
+64   The value passed is not a valid control mode for this control
+65   A NULL pointer was passed when a non-NULL pointer was expected
+66   The text bg color on a menu ring can not be set or gotten
+67   The ring control passed must be one of the menu ring styles
+68   Text can not be colored transparent
+69   A value can not be converted to the specified data type
+70   Invalid tab order position for control
+71   The tab order position of an indicator-only-control cannot be set
+72   Invalid number
+73   There is no menu bar installed for the panel
+74   The control passed is not a text box
+75   Invalid scroll mode for chart
+76   Invalid image type for picture
+77   The attribute is valid for child panels only\nSome attributes of top level panels are determined by the host operating system.
+78   The list control passed is not in check mode
+79   The control values could not be completely loaded into the panel\nbecause the panel has changed.
+80   Maximum value must be greater than minimum value
+81   Graph doesn't have that many cursors
+82   Invalid plot
+83   New cursor position is outside plot area
+84   The length of the string exceeds the limit
+85   The callback function, %s, specified in the UIR file, does not have the required prototype.
+86   The callback function, %s, specified in the UIR file,  is not a known function.  If you are using an external  compiler, you must include the UIR callbacks object or  source file in the executable or DLL.
+87   Graph cannot be in this mode without cursors
+88   Invalid axis scaling mode for chart
+89   The font passed is not in the meta font table
+90   The attribute value passed is not valid
+91   Too many files are open
+92   Unexpectedly reached end of file
+93   Input/Output error
+94   File not found
+95   File access permission denied
+96   File access is not enabled
+97   Disk is full
+98   File already exists
+99   File is already open
+100   Badly formed pathname

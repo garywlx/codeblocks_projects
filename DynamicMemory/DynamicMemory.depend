@@ -1,0 +1,104 @@
+# depslib dependency file v1.0
+1462429524 source:d:\c++ projects\dynamicmemory\main.cpp
+	<iostream>
+	<memory>
+	<string>
+	<vector>
+	"StrBlob.h"
+	<cstring>
+	<fstream>
+	<sstream>
+	"TextQuery.h"
+	"QueryResult.h"
+
+1462332315 source:d:\c++ projects\dynamicmemory\src\strblob.cpp
+	"StrBlob.h"
+
+1462345310 d:\c++ projects\dynamicmemory\include\strblob.h
+	<vector>
+	<string>
+	<memory>
+	<stdexcept>
+
+1462429230 d:\c++ projects\dynamicmemory\include\textquery.h
+	<fstream>
+	<sstream>
+	<vector>
+	<set>
+	<map>
+	<string>
+	<memory>
+	<cstring>
+	"QueryResult.h"
+
+1462436915 d:\c++ projects\dynamicmemory\include\queryresult.h
+	<iostream>
+	<vector>
+	<set>
+	<map>
+	<string>
+	<memory>
+
+1462113234 source:d:\c++ projects\dynamicmemory\src\queryresult.cpp
+	"QueryResult.h"
+
+1462429478 source:d:\c++ projects\dynamicmemory\src\textquery.cpp
+	"TextQuery.h"
+
+1462332471 d:\c++ projects\dynamicmemory\include\strblobptr.h
+	<memory>
+	<vector>
+	<string>
+	"StrBlob.h"
+
+1462430814 source:d:\c++ projects\dynamicmemory\src\query.cpp
+	"Query.h"
+
+1462436568 d:\c++ projects\dynamicmemory\include\query.h
+	<iostream>
+	<string>
+	<memory>
+	"Query_base.h"
+	"WordQuery.h"
+
+1462417259 source:d:\c++ projects\dynamicmemory\src\query_base.cpp
+	"Query_base.h"
+
+1462438581 d:\c++ projects\dynamicmemory\include\query_base.h
+	<string>
+	"QueryResult.h"
+	"TextQuery.h"
+
+1462425430 source:d:\c++ projects\dynamicmemory\src\wordquery.cpp
+	"WordQuery.h"
+
+1462431034 d:\c++ projects\dynamicmemory\include\wordquery.h
+	"Query_base.h"
+
+1462438217 source:d:\c++ projects\dynamicmemory\src\noquery.cpp
+	"NoQuery.h"
+
+1462432208 d:\c++ projects\dynamicmemory\include\noquery.h
+	<Query_base.h>
+	"Query.h"
+
+1462432321 source:d:\c++ projects\dynamicmemory\src\binaryquery.cpp
+	"BinaryQuery.h"
+
+1462432591 d:\c++ projects\dynamicmemory\include\binaryquery.h
+	"Query_base.h"
+	"Query.h"
+
+1462437508 source:d:\c++ projects\dynamicmemory\src\addquery.cpp
+	"AddQuery.h"
+	<algorithm>
+
+1462434243 d:\c++ projects\dynamicmemory\include\addquery.h
+	<BinaryQuery.h>
+
+1462436511 source:d:\c++ projects\dynamicmemory\src\orquery.cpp
+	"OrQuery.h"
+
+1462434343 d:\c++ projects\dynamicmemory\include\orquery.h
+	<BinaryQuery.h>
+
