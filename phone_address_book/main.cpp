@@ -1,102 +1,76 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-struct DATA
+
+struct Stu
 {
+    //Stu():name(""),phone(""),next(nullptr){}
     char name[21];
     char phone[21];
-    struct DATA *next;
+    struct Stu *next;
 };
+Stu *head=NULL;
+void Insert()
+{
+    Stu *t=(Stu*)malloc(sizeof(Stu));
+    printf("Input a stu info: \n");
+    scanf("%s%s",t->name,t->phone);
+    t->next=NULL;
+    if(head==NULL){
+        head=t;
+        head->next=NULL;
+    }
+    else
+    {
+        Stu *p=head;
+        while(p->next!=NULL)
+            p=p->next;
+        p->next=t;
+    }
 
-struct DATA *Insert(struct DATA* start);
-struct DATA *Delete(struct DATA* start);
-void Print(struct DATA* start);
+}
+void print(){
+    Stu *p=head;
+    while(p!=NULL){
+        printf("%s %s\n",p->name,p->phone);
+        p=p->next;
+    }
+}
+void delete_(char *name)
+{
+    Stu *p=head,*pre=NULL;
+    while(p!=NULL)
+    {
+        if(strcmp(p->name,name)==0){
+            if(pre!=NULL)
+            {
+                pre->next=p->next;
+                delete p;
+            }else{
+                head=p->next;
+                delete p;
+            }
+            break;
+        }
+        pre=p;
+        p=p->next;
+    }
+    print();
+}
 
 int main()
 {
-    struct DATA *start = NULL;
-    char operation[7];
-    while (1)
+    for(int i=0;i<3;i++)
     {
-        scanf("%s",operation);
-        if (!strcmp(operation,"End"))
-            break;
-        else if (!strcmp(operation,"Insert"))
-        {
-            start = Insert(start);
-//            flag++;
-//            if (!flag)
-//            {
-//                pstart = start;
-//            }
-//            printf("%p\n",start);
-            continue;
-        }
-        else if (!strcmp(operation,"Delete"))
-        {
-            start = Delete(start);
-            continue;
-        }
-        else if (!strcmp(operation,"Print"))
-        {
-            Print(start);
-            continue;
-        }
+        Insert();
+    }
+    print();
+    for(int i=0;i<10;i++)
+    {
+        char name[20];
+        printf("INput a name to delted:\n");
+        scanf("%s",name);
+        delete_(name);
     }
     return 0;
-}
-
-struct DATA *Insert(struct DATA* start)
-{
-    char behind[21];
-    struct DATA *p=NULL, *pr=start;
-    while (p==NULL)
-    {
-        p = (struct DATA*)malloc(sizeof(struct DATA));
-    }
-    scanf("%s %s %s %s",p->name,p->phone,behind,behind);
-    p->next = NULL;
-    if (!strcmp(behind,"Nobody"))
-    {
-        p->next = start;
-        start = p;
-        return start;
-    }
-    while(strcmp(pr->name,behind))
-    {
-        pr = pr->next;
-    }
-    p->next = pr->next;
-    pr->next = p;
-    return start;
-}
-
-struct DATA *Delete(struct DATA* start)
-{
-    char name[21];
-    struct DATA *pr=start, *p=start;
-    scanf("%s",name);
-    while(strcmp(p->name,name))
-    {
-        pr = p;
-        p = p->next;
-    }
-    if (p==start)
-        start = p->next;
-    else
-    {
-        pr->next = p->next;
-    }
-    free(p);
-    return start;
-}
-
-void Print(struct DATA* start)
-{
-    struct DATA *p=start;
-    while (p!=NULL)
-    {
-        printf("%s %s\n",p->name,p->phone);
-        p = p->next;
-    }
 }
