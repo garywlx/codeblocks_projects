@@ -27,6 +27,7 @@ public:
     typedef typename std::vector<T>::size_type size_type;
     Blob();
     Blob(initializer_list<T> il);
+    template <typename It>Blob(It b,It e);
     size_type size()const{return data->size();}
     bool empty()const{return data->empty();}
     void push_back(const T &t){data->push_back(t);}

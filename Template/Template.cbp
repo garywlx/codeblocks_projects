@@ -34,15 +34,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/A.h" />
 		<Unit filename="include/Blob.h" />
 		<Unit filename="include/BlobPtr.h" />
-		<Unit filename="include/C.h" />
+		<Unit filename="include/DebugDelete.h" />
 		<Unit filename="include/Sales_data.h" />
+		<Unit filename="include/shared_pointer.h" />
+		<Unit filename="include/unique_pointer.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/A.cpp" />
 		<Unit filename="src/Blob.cpp" />
-		<Unit filename="src/C.cpp" />
 		<Unit filename="src/Sales_data.cpp" />
 		<Extensions>
 			<code_completion />

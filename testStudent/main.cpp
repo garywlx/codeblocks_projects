@@ -1,53 +1,109 @@
-#include <iostream>
-#include <string>
-#include <cassert>
-using namespace std;
-
-using arrT=int[10];
-
-int (*func(int n))[10]
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define n 10000
+struct person *Insert(struct person *head);
+void Print(struct person *head);
+struct person*Delete(struct person *head,char d[n]);
+struct person
 {
-    arrT myarr;
-    for(int i=1;i<=n;i++)
-        myarr[i]=i*i;
-    return &myarr;
-
-}
-void print(string word,int threshold)
-{
-    #ifndef ndebug
-        if(word.size()<threshold)
-            cerr << "Error: " << __FILE__
-                << " :in function " << __func__
-                << " at line " << __LINE__ << endl
-                << " Compiled on " << __DATE__
-                << " at " << __TIME__ << endl;
-     #endif // ndebug
-}
+    char name[n];
+    char num[n];
+    struct person *next;
+};
 int main()
 {
-    typedef int arr[10];
-    arr arr2;
-    arrT arr3;
-    int* p[10];
-    int (*p2)[10]=func(10);
+    char a[]= {"Insert"},b[]= {"Print"},c[]= {"End"},d[n],e[n];
+    struct person*head=NULL;
+    while(true)
+    {
+        scanf("%s",e);
+        if(strcmp(e,a)==0)
+            head=Insert(head);
+        else if(strcmp(e,b)==0)
+            Print(head);
+        else if(strcmp(c,e)==0)
+        {
+            exit(0);
+        }
+        else
+        {
+            scanf("%s",d);
+            head=Delete(head,d);
+        }
+    }
+}
+struct person *Insert(struct person *head)
+{
+    char NAME[n],m[n];
+    struct person *tr=head,*t=head;
+    t=(struct person*)malloc(sizeof(struct person));
+    scanf("%s %s %s %s\n",t->name,t->num,m,NAME);
+    t->next=NULL;
+    if(t==NULL)
+    {
+        exit(0);
+    }
+    if(head==NULL)
+    {
+        head=t;
+    }
+    else
+    {
+        while((strcmp(NAME,tr->name)!=0)&&tr->next!=NULL)
+        {
+            tr=tr->next;
+        }
+        if(strcmp(NAME,tr->name)==0&&t!=NULL)
+        {
+            t->next=tr->next;
+            tr->next=t;
+        }
+        else if(strcmp(NAME,tr->name)!=0&&t!=NULL)
+        {
+            t->next=head;
+            head=t;
+        }
+    }
+return head;
+}
+void Print(struct person *head)
+{
+    struct person*t=head;
+    while(t!=NULL)
+    {
+        printf("%s %s\n",t->name,t->num);
+        t=t->next;
+    }
+}
+struct person*Delete(struct person *head,char d[n])
+{
+    struct person *t=head,*tr=head;
+    if(head==NULL)
+    {
+        return(head);
+    }
+    while(t!=NULL&&(strcmp(t->name,d)!=0))
+    {
+        tr=t;
+        t=t->next;
+    }
+    if(t==NULL){
+        //exit(0);
+    }
+    else if(strcmp(d,t->name)==0)
+    {
+        if(t==head)
+        {
+            head=t->next;
+        }
+        else
+        {
+            tr->next=t->next;
+        }
+        free(t);
+    }
 
-    for(int i=0;i<10;i++)
-    {
-        cout << *(*p2+i) << ends;
-    }
-    cout << endl;
-    //string s("li");
-    //print(s,10);
-    //while(cin >>s && s!="sought"){}
-    assert(cin);
-    int a,i=0;
-    char s;
-    while(cin >> a)
-    {
-        arr3[i++]=a;
-    }
-    for (int j=0;j<i;j++)
-        cout << arr3[i] << endl;
-    return 0;
+    return head;
+
 }

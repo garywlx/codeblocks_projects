@@ -1,43 +1,60 @@
 # depslib dependency file v1.0
-1462450229 source:d:\c++ projects\template\main.cpp
+1462872571 source:d:\c++ projects\template\main.cpp
 	<iostream>
 	"Sales_data.h"
 	<vector>
 	<string>
+	<list>
+	"DeleteDebug.h"
+	"shared_pointer.h"
 
-1462448343 source:d:\c++ projects\template\src\sales_data.cpp
+1462536128 source:d:\c++ projects\template\src\sales_data.cpp
 	"Sales_data.h"
 
-1462448335 d:\c++ projects\template\include\sales_data.h
+1462675405 d:\c++ projects\template\include\sales_data.h
 
-1462452694 source:d:\c++ projects\template\src\blob.cpp
+1462689071 source:d:\c++ projects\template\src\blob.cpp
 	"Blob.h"
 
-1462459960 d:\c++ projects\template\include\blob.h
+1462688881 d:\c++ projects\template\include\blob.h
 	<vector>
 	<string>
 	<memory>
 	"BlobPtr.h"
 
-1462458673 d:\c++ projects\template\include\blobptr.h
+1462536128 d:\c++ projects\template\include\blobptr.h
 	<vector>
 	<string>
 	<memory>
 	<stdexcept>
 	"Blob.h"
 
-1462460133 source:d:\c++ projects\template\src\a.cpp
+1462536128 source:d:\c++ projects\template\src\a.cpp
 	"A.h"
 
-1462460265 d:\c++ projects\template\include\a.h
+1462536128 d:\c++ projects\template\include\a.h
 	<list>
 	<vector>
 	<map>
 	<utility>
 
-1462460139 source:d:\c++ projects\template\src\c.cpp
+1462536128 source:d:\c++ projects\template\src\c.cpp
 	"C.h"
 
-1462460123 d:\c++ projects\template\include\c.h
+1462536128 d:\c++ projects\template\include\c.h
+	<iostream>
+
+1462679871 source:d:\c++ projects\template\src\deletedebug.cpp
+	"DeleteDebug.h"
+
+1462679975 d:\c++ projects\template\include\deletedebug.h
+	<iostream>
+
+1462777064 d:\c++ projects\template\include\shared_pointer.h
+	<iostream>
+	<functional>
+	"DebugDelete.h"
+
+1462698955 d:\c++ projects\template\include\debugdelete.h
 	<iostream>
 

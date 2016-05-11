@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
+#include "Sales_data.h"
+
 using namespace std;
 
 class Base
@@ -64,7 +66,13 @@ int main()
     //cin >> str;
     //cin.getline(str,1000);
     //FormatString(str,strlen(str));
-    Base *b=new Derived(3);
-    b->private_test();
+    //Base *b=new Derived(3);
+    //b->private_test();
+    Sales_data data;
+    string s("tom");
+    data.static_print(s);
+    cout << data.ss<< endl;;
+    data.ss=s;
+    cout << data.ss<< endl;
     return 0;
 }

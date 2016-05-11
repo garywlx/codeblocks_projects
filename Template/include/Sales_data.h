@@ -6,11 +6,13 @@ class Sales_data
 {
     public:
         Sales_data();
+        //static int print(int val);
         virtual ~Sales_data();
 
     protected:
 
     private:
+        //static int s_val;
         int val;
 };
 

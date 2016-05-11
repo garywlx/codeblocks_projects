@@ -1,12 +1,14 @@
 # depslib dependency file v1.0
-1462365238 source:d:\c++ projects\classtest\main.cpp
+1462677302 source:d:\c++ projects\classtest\main.cpp
 	<iostream>
 	<string.h>
 	<stdio.h>
-
-1450404214 source:d:\c++ projects\classtest\src\sales_data.cpp
 	"Sales_data.h"
 
-1459173391 d:\c++ projects\classtest\include\sales_data.h
+1462677382 source:d:\c++ projects\classtest\src\sales_data.cpp
+	"Sales_data.h"
+
+1462676295 d:\c++ projects\classtest\include\sales_data.h
 	<string>
+	<iostream>
 

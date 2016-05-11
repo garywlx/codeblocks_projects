@@ -11,6 +11,11 @@ Blob<T>::Blob(std::initializer_list<T> il):
 {
     //ctor
 }
+//通过迭代器初始化
+template<typename T>
+template <typename It>Blob<T>::Blob(It b,It e)
+    :data(std::make_shared<std::vector<T>>(b,e)){}
+
 template<typename T>
 void Blob<T>::pop_back()
 {
